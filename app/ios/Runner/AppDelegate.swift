@@ -1,5 +1,6 @@
 import UIKit
 import Flutter
+import GoogleMaps
 // import os.log
 
 @UIApplicationMain
@@ -8,6 +9,7 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
+    GMSServices.provideAPIKey("AIzaSyBspGyuwwHxIW41QsxCdeE9qW7sXBbgeSU")
     GeneratedPluginRegistrant.register(with: self)
     // get secrets here!
     // let dartDefinesString = Bundle.main.object(forInfoDictionaryKey:"DartDefines") as! String

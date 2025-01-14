@@ -20,6 +20,7 @@ class AppNavigatorImpl extends AppNavigator with LogMixin {
     HomeTab(),
     SearchTab(),
     MyPageTab(),
+    GoogleMapTab()
   ];
 
   TabsRouter? tabsRouter;

@@ -43,6 +43,13 @@ class AppRouter extends $AppRouter {
               AutoRoute(page: MyPageRoute.page, initial: true),
             ],
           ),
+          AutoRoute(
+            page: GoogleMapTab.page,
+            maintainState: true,
+            children: [
+              AutoRoute(page: GoogleMapRoute.page, initial: true),
+            ],
+          ),
         ]),
       ];
 }
@@ -60,4 +67,9 @@ class SearchTabPage extends AutoRouter {
 @RoutePage(name: 'MyPageTab')
 class MyPageTabPage extends AutoRouter {
   const MyPageTabPage({super.key});
+}
+
+@RoutePage(name: 'GoogleMapTab')
+class GoogleMapTabPage extends AutoRouter {
+  const GoogleMapTabPage({super.key});
 }
