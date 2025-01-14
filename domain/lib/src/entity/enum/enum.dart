@@ -50,7 +50,8 @@ enum NotificationType {
 enum BottomTab {
   home(icon: Icon(Icons.home), activeIcon: Icon(Icons.home)),
   search(icon: Icon(Icons.search), activeIcon: Icon(Icons.search)),
-  myPage(icon: Icon(Icons.people), activeIcon: Icon(Icons.people));
+  myPage(icon: Icon(Icons.people), activeIcon: Icon(Icons.people)),
+  googleMMap(icon: Icon(Icons.map), activeIcon: Icon(Icons.map));
 
   const BottomTab({
     required this.icon,
@@ -67,6 +68,8 @@ enum BottomTab {
         return S.current.search;
       case BottomTab.myPage:
         return S.current.myPage;
+      case BottomTab.googleMMap:
+        return S.current.map;
     }
   }
 }

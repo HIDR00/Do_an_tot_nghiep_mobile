@@ -11,6 +11,8 @@
         android:fullBackupOnly="false"
         android:allowBackup="false"
         tools:replace="android:allowBackup">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyBspGyuwwHxIW41QsxCdeE9qW7sXBbgeSU"/>
         <activity
             android:screenOrientation="portrait"
             android:exported="true"
